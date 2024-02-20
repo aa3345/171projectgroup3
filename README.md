@@ -1,1 +1,1 @@
-# 171projectgroup3
+# ECS 171 Project - Group 3
