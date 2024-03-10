@@ -2,4 +2,4 @@ streamlit
 pandas
 numpy
 xgboost==2.0.3
-sklearn
+scikit-learn
