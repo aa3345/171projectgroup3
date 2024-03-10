@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import streamlit as st
-from sklearn.preprocessing import MinMaxScaler
 
 xgb_model = pickle.load(open('xgb_model.sav', 'rb'))
 
