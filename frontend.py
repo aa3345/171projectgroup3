@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import streamlit as st
 
-xgb_model = pickle.load(open('/xgb_model.sav', 'rb'))
+xgb_model = pickle.load(open('xgb_model.sav', 'rb'))
 
 
 def main():
