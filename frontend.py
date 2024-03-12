@@ -117,12 +117,12 @@ def give_prediction(input_data):
     elif classificationX == 3:
         x = 'Overweight Level II  '
     elif classificationX == 4:
-        x = 'Obesity Type I'
+        x = 'Obesity Type I  '
     elif classificationX == 5:
         x = 'Obesity Type II  '     
     elif classificationX == 6:
        x = "Obesity Type III  "
-    x += "Here are some tips and preventative measures based on your answer. "    
+    x += "Here are some tips and preventative measures based on your answers for you to implement in your everyday life to live a healthier lifestyle. "    
     if input_data[14] == "Always" or input_data[14] == "Frequently":
         x += "Try to reduce your alcohol intake. "   
     if input_data[12] <= 3:
@@ -131,8 +131,6 @@ def give_prediction(input_data):
         x += "Consider eating less amounts of high caloric food in your diet. "
     if input_data[6] <= 2:
         x += "Consider eating more vegetables in your meals. "
-    if input_data[14] == "Always" or input_data[14] == "Frequently":
-        x += "Try to reduce your alcohol intake. "
     return x
 
 if __name__ == '__main__':
