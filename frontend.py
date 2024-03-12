@@ -109,19 +109,29 @@ def give_prediction(input_data):
     classificationX = xgb_model.predict(user_data)
     x = ''
     if classificationX == 0:
-        x = "XGB Model: Insufficient Weight"
+        x = "Insufficient Weight"
     elif classificationX == 1:
-        x ='XGB Model: Normal Weight'
+        x ='Normal Weight'
     elif classificationX == 2:
-        x = 'XGB Model: Overweight Level I'
+        x = 'Overweight Level I  '
     elif classificationX == 3:
-        x = 'XGB Model: Overweight Level II'
+        x = 'Overweight Level II  '
     elif classificationX == 4:
-        x = 'XGB Model: Obesity Type I'
+        x = 'Obesity Type I'
     elif classificationX == 5:
-        x = 'XGB Model: Obesity Type II'
+        x = 'Obesity Type II  '     
     elif classificationX == 6:
-       x = "XGB Model: Obesity Type III"
+       x = "Obesity Type III  "
+    if input_data[14] == "Always" or input_data[14] == "Frequently":
+        x += "Try to reduce your alcohol intake. "   
+    if input_data[12] <= 3:
+        x += "Consider starting to exercise more often. "   
+    if input_data[5] == "yes":
+        x += "Consider eating less amounts of high caloric food in your diet. "
+    if input_data[6] <= 2:
+        x += "Consider eating more vegetables in your meals. "
+    if input_data[14] == "Always" or input_data[14] == "Frequently":
+        x += "Try to reduce your alcohol intake. "
     return x
 
 if __name__ == '__main__':
