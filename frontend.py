@@ -122,15 +122,16 @@ def give_prediction(input_data):
         x = 'Obesity Type II  '     
     elif classificationX == 6:
        x = "Obesity Type III  "
-    elif input_data[14] == "Always" or input_data[14] == "Frequently":
+        
+    if input_data[14] == "Always" or input_data[14] == "Frequently":
         x += "Try to reduce your alcohol intake. "   
-    elif input_data[12] <= 3:
+    if input_data[12] <= 3:
         x += "Consider starting to exercise more often. "   
-    elif input_data[5] == "yes":
+    if input_data[5] == "yes":
         x += "Consider eating less amounts of high caloric food in your diet. "
-    elif input_data[6] <= 2:
+    if input_data[6] <= 2:
         x += "Consider eating more vegetables in your meals. "
-    elif input_data[14] == "Always" or input_data[14] == "Frequently":
+    if input_data[14] == "Always" or input_data[14] == "Frequently":
         x += "Try to reduce your alcohol intake. "
     return x
 
