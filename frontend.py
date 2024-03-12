@@ -111,7 +111,7 @@ def give_prediction(input_data):
     if classificationX == 0:
         x = "Insufficient Weight:  "
     elif classificationX == 1:
-        x ='Normal Weight \n'
+        x ='Normal Weight:  '
     elif classificationX == 2:
         x = 'Overweight Level I:  '
     elif classificationX == 3:
