@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import streamlit as st
+from sklearn.preprocessing import MinMaxScaler
 
 xgb_model = pickle.load(open('xgb_model.sav', 'rb'))
 
@@ -106,7 +107,10 @@ def give_prediction(input_data):
        'MTRANS__Walking']
     user_data = user_data.reindex(columns=expected)
     user_data = user_data.fillna(0)
-    classificationX = xgb_model.predict(user_data)
+    scaler = MinMaxScaler(feature_range=(0, 1))
+    X_rescaled = scaler.fit_transform(user_data)
+    X = pd.DataFrame(data = X_rescaled, columns = user_data.columns)
+    classificationX = xgb_model.predict(X)
     x = ''
     if classificationX == 0:
         x = "Insufficient Weight:  "
