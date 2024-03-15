@@ -4,7 +4,22 @@ To see the front end model visit the About section in the repo or type in tinyur
 Here is the demo link "https://youtu.be/0xFOsGqz2eg?si=MrZ2UDme3uRuvlOR" for instructions on how to use the front-end
 
 ## About the Project
-This repository hosts code used to generate models for ECS171 Winter Quarter. In order to build your own models, you will need the dataset we used (link to UCI link), along with a few python libraries (link).
+This repository hosts code used to generate models for ECS171 Winter Quarter. 
+In order to build your own models, you will need the dataset we used [link](https://doi.org/10.24432/C5H31Z) regardless if you wish to clone this repository or download specific files for download. 
+Additionally, you will need the following dependencies:
+- streamlit
+- pandas
+- numpy
+- xgboost==2.0.3
+- scikit-learn
+
+### Cloning the Repository
+If you would like to clone this repository, you can use the following command to clone it: `git clone https://github.com/aa3345/171projectgroup3`
+After, navigate to the cloned repository in a terminal and run: `python3 -m pip install requirements.txt` to install all needed dependencies.
+
+### Downloading Individual Models
+If you haven not cloned this repository in it's entirety, you can still run the files assuming you have the dataset in the working directory and have installed the required dependencies using `python3 -m pip install dependency-name`. Make sure you replace "dependecy-name" with the actual name of the dependency listed.
+
 
 ## Files
 DNN.ipynb - Notebook for the Deep Neural Network model being trained <br>
