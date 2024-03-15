@@ -1,4 +1,6 @@
 # ECS 171 Project - Group 3
+By Aadhi Aravind, Nandhana Selvam, Leo Wang, and Patrick Manson
+
 ## Front-End
 To see the front end model visit the About section in the repo or type in tinyurl.com/171group3 which will lead to a website that is hosted through streamlit with a form that asks a couple of questions.
 [Here is the demo link for instructions on how to use the front-end.](https://youtu.be/0xFOsGqz2eg?si=MrZ2UDme3uRuvlOR)
