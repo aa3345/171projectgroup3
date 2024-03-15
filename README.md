@@ -1,6 +1,6 @@
 # ECS 171 Project - Group 3
 ## Front-End
-To see the front end model visit the About section in the repo or type in tinyurl.com/171group3 which will lead to a website that is hosted through streamlit with a form that asks a couple of questions.
+To see the front end model visit the About section in the repo or type in "tinyurl.com/171group3" which will lead to a website that is hosted through streamlit with a form that asks a couple of questions.
 Here is the demo link "https://youtu.be/0xFOsGqz2eg?si=MrZ2UDme3uRuvlOR" for instructions on how to use the front-end
 
 ## About the Project
